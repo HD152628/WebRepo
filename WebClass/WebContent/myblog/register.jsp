@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +14,7 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/myblog.css">
-<title>인수의 블로그</title>
+<title>ì¸ìì ë¸ë¡ê·¸</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -22,7 +24,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="main.html">인수의 블로그</a>
+		<a class="navbar-brand" href="main.html">ì¸ìì ë¸ë¡ê·¸</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,11 +34,11 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a class="nav-link" onclick="hobby();">취미<span
+				<li class="nav-item"><a class="nav-link" onclick="hobby();">ì·¨ë¯¸<span
 						class="sr-only">(current)</span></a></li>
-				<li class="nav-item"><a class="nav-link" onclick="favorite()">좋아하는
-						것</a></li>
-				<li class="nav-item"><a class="nav-link" onclick="dream();">꿈</a>
+				<li class="nav-item"><a class="nav-link" onclick="favorite()">ì¢ìíë
+						ê²</a></li>
+				<li class="nav-item"><a class="nav-link" onclick="dream();">ê¿</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0" id="loginForm">
@@ -44,9 +46,9 @@
 					aria-label="id" id="id" required> <input
 					class="form-control mr-sm-2" type="password" placeholder="PWD"
 					aria-label="pwd" id="pwd" required>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그인</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">ë¡ê·¸ì¸</button>
 				<button class="btn btn-outline-success my-2 my-sm-0" type="button"
-					onclick="go_register();">회원가입</button>
+					onclick="go_register();">íìê°ì</button>
 			</form>
 		</div>
 	</nav>
@@ -54,13 +56,13 @@
 	<form id="registerForm">
 
 		<div class="input-group input-group-container">
-			<span class="input-group-addon">이름</span> <input type="text"
+			<span class="input-group-addon">ì´ë¦</span> <input type="text"
 				class="form-control" placeholder="Name" aria-label="Username"
 				id="name" required>
 		</div>
 
 		<div class="input-group input-group-container">
-			<span class="input-group-addon">번호</span> <input type="text"
+			<span class="input-group-addon">ë²í¸</span> <input type="text"
 				class="form-control" placeholder="Number" aria-label="Number"
 				id="number" required>
 		</div>
@@ -69,34 +71,34 @@
 		<div class="form-check form-check-inline">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio1" value="grade1" required> 1학년
+				id="inlineRadio1" value="grade1" required> 1íë
 			</label>
 		</div>
 
 		<div class="form-check form-check-inline">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio2" value="grade2" required> 2학년
+				id="inlineRadio2" value="grade2" required> 2íë
 			</label>
 		</div>
 
 		<div class="form-check form-check-inline ">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio3" value="grade3" required> 3학년
+				id="inlineRadio3" value="grade3" required> 3íë
 			</label>
 		</div>
 
 		<select class="form-control" name="class" required>
-			<option value="">---선택---</option>
-			<option value="class1">1반</option>
-			<option value="class2">2반</option>
-			<option value="class3">3반</option>
-			<option value="class4">4반</option>
-			<option value="class5">5반</option>
-			<option value="class6">6반</option>
+			<option value="">---ì í---</option>
+			<option value="class1">1ë°</option>
+			<option value="class2">2ë°</option>
+			<option value="class3">3ë°</option>
+			<option value="class4">4ë°</option>
+			<option value="class5">5ë°</option>
+			<option value="class6">6ë°</option>
 		</select><br>
-		<button type="submit" class="btn btn-primary btn-lg">회원가입</button>
+		<button type="submit" class="btn btn-primary btn-lg">íìê°ì</button>
 	</form>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -116,7 +118,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">로그인 성공</h5>
+					<h5 class="modal-title">ë¡ê·¸ì¸ ì±ê³µ</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -127,7 +129,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">닫기</button>
+						data-dismiss="modal">ë«ê¸°</button>
 				</div>
 			</div>
 		</div>
@@ -137,7 +139,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">회원가입 성공</h5>
+					<h5 class="modal-title">íìê°ì ì±ê³µ</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -148,7 +150,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal" onclick="location.href='main.html'">닫기</button>
+						data-dismiss="modal" onclick="location.href='main.html'">ë«ê¸°</button>
 				</div>
 			</div>
 		</div>

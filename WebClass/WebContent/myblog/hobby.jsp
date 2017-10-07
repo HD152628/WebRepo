@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
 <script src="../js/blog.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<title>인수의 블로그</title>
+<title>ì¸ìì ë¸ë¡ê·¸</title>
 <link rel="stylesheet" type="text/css" href="../css/myblog.css">
 
 <!-- Bootstrap CSS -->
@@ -21,7 +23,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="main.html">인수의 블로그</a>
+		<a class="navbar-brand" href="main.html">ì¸ìì ë¸ë¡ê·¸</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,10 +34,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
-					onclick="hobby();">취미<span class="sr-only">(current)</span></a></li>
-				<li class="nav-item"><a class="nav-link" onclick="favorite()">좋아하는
-						것</a></li>
-				<li class="nav-item"><a class="nav-link" onclick="dream();">꿈</a>
+					onclick="hobby();">ì·¨ë¯¸<span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link" onclick="favorite()">ì¢ìíë
+						ê²</a></li>
+				<li class="nav-item"><a class="nav-link" onclick="dream();">ê¿</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0" id="loginForm">
@@ -43,9 +45,9 @@
 					aria-label="id" id="id" required> <input
 					class="form-control mr-sm-2" type="password" placeholder="PWD"
 					aria-label="pwd" id="pwd" required>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그인</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">ë¡ê·¸ì¸</button>
 				<button class="btn btn-outline-success my-2 my-sm-0" type="button"
-					onclick="go_register();">회원가입</button>
+					onclick="go_register();">íìê°ì</button>
 			</form>
 		</div>
 	</nav>
@@ -55,8 +57,8 @@
 				src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.com%2Fimage%2F439%2F2015%2F10%2F20%2F20151020140352_5611_99_20151020140904.jpg&amp;type=b400"
 				width="600" height="250" alt="img1">
 			<div class="card-body">
-				<h4 class="card-title">게임</h4>
-				<p class="card-text">게임하는 것을 좋아합니다!</p>
+				<h4 class="card-title">ê²ì</h4>
+				<p class="card-text">ê²ìíë ê²ì ì¢ìí©ëë¤!</p>
 				<p class="card-text"></p>
 			</div>
 			<hr>
@@ -64,8 +66,8 @@
 				src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.com%2Fimage%2F009%2F2017%2F07%2F18%2F0003980890_001_20170718060302250.jpg&type=b400"
 				width="600" height="250" alt="img2">
 			<div class="card-body">
-				<h4 class="card-title">축구</h4>
-				<p class="card-text">축가하는 것을 좋아해요!!</p>
+				<h4 class="card-title">ì¶êµ¬</h4>
+				<p class="card-text">ì¶ê°íë ê²ì ì¢ìí´ì!!</p>
 				<p class="card-text"></p>
 			</div>
 		</div>
@@ -89,7 +91,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">로그인 성공</h5>
+					<h5 class="modal-title">ë¡ê·¸ì¸ ì±ê³µ</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -100,7 +102,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">닫기</button>
+						data-dismiss="modal">ë«ê¸°</button>
 				</div>
 			</div>
 		</div>

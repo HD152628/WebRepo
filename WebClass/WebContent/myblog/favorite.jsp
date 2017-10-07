@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
 <script src="../js/blog.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<title>인수의 블로그</title>
+<title>ì¸ìì ë¸ë¡ê·¸</title>
 <link rel="stylesheet" type="text/css" href="../css/myblog.css">
 
 <!-- Bootstrap CSS -->
@@ -21,7 +23,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="main.html">인수의 블로그</a>
+		<a class="navbar-brand" href="main.html">ì¸ìì ë¸ë¡ê·¸</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,11 +33,11 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a class="nav-link" onclick="hobby();">취미<span
+				<li class="nav-item"><a class="nav-link" onclick="hobby();">ì·¨ë¯¸<span
 						class="sr-only">(current)</span></a></li>
 				<li class="nav-item active"><a class="nav-link"
-					onclick="favorite()">좋아하는 것</a></li>
-				<li class="nav-item"><a class="nav-link" onclick="dream();">꿈</a>
+					onclick="favorite()">ì¢ìíë ê²</a></li>
+				<li class="nav-item"><a class="nav-link" onclick="dream();">ê¿</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0" id="loginForm">
@@ -43,9 +45,9 @@
 					aria-label="id" id="id" required> <input
 					class="form-control mr-sm-2" type="password" placeholder="PWD"
 					aria-label="pwd" id="pwd" required>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그인</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">ë¡ê·¸ì¸</button>
 				<button class="btn btn-outline-success my-2 my-sm-0" type="button"
-					onclick="go_register();">회원가입</button>
+					onclick="go_register();">íìê°ì</button>
 			</form>
 		</div>
 	</nav>
@@ -56,8 +58,8 @@
 					src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20130206_228%2Fetbest_1360114526637wT9Bm_JPEG%2F%25BE%25E7%25B3%25E4%25C4%25A1%25C5%25B2.jpg&type=b400"
 					width="100" height="100" alt="img1">
 				<div class="card-body">
-					<h4 class="card-title">치킨</h4>
-					<p class="card-text">치킨을 정말로 좋아합니다</p>
+					<h4 class="card-title">ì¹í¨</h4>
+					<p class="card-text">ì¹í¨ì ì ë§ë¡ ì¢ìí©ëë¤</p>
 					<p class="card-text"></p>
 				</div>
 				<hr>
@@ -66,8 +68,8 @@
 					src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles7.naver.net%2F20120327_50%2Finsidesku_1332814011894qMPRt_JPEG%2F%25BD%25BA%25C6%25E5.jpg&type=b400"
 					width="100" height="100" alt="img2">
 				<div class="card-body">
-					<h4 class="card-title">공부</h4>
-					<p class="card-text">공부를 즐겨합니다 ^^</p>
+					<h4 class="card-title">ê³µë¶</h4>
+					<p class="card-text">ê³µë¶ë¥¼ ì¦ê²¨í©ëë¤ ^^</p>
 					<p class="card-text"></p>
 				</div>
 				<hr>
@@ -76,8 +78,8 @@
 					src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAxNzA0MjRfNjkg%2FMDAxNDkzMDE1NDg2MzY4.e-2M4iII_xrDvJLjtyGoeLHKqHqO4R-NJLU_opqhX_Qg.8QwcbEYfkIC3mPn_7blUnCVOZtijhm4tLCGNC0Dg9M8g.JPEG%2Fmug_obj_149301548145868195.jpg&type=b400"
 					width="100" height="100" alt="img3">
 				<div class="card-body">
-					<h4 class="card-title">컴퓨터</h4>
-					<p class="card-text">컴퓨터 가지고 노는것을 좋아합니다.</p>
+					<h4 class="card-title">ì»´í¨í°</h4>
+					<p class="card-text">ì»´í¨í° ê°ì§ê³  ë¸ëê²ì ì¢ìí©ëë¤.</p>
 					<p class="card-text"></p>
 				</div>
 			</div>
@@ -102,7 +104,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">로그인 성공</h5>
+					<h5 class="modal-title">ë¡ê·¸ì¸ ì±ê³µ</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -113,7 +115,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">닫기</button>
+						data-dismiss="modal">ë«ê¸°</button>
 				</div>
 			</div>
 		</div>
