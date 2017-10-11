@@ -38,7 +38,7 @@
 		<form class="form-inline my-2 my-lg-0" id="loginForm"
 			action="/WebClass/bloglogin" method="post">
 			<input class="form-control mr-sm-2" type="text" placeholder="ID"
-				aria-label="id" id="id" name="id" value = <%= id %> required> <input
+				aria-label="id" id="id" name="id" value = <%= id == null ? "" : id %> required> <input
 				class="form-control mr-sm-2" type="password" placeholder="PWD"
 				aria-label="pwd" id="pwd" name="pwd" required>
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">log
