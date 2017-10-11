@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="../js/blog.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <title>ì¸ìì ë¸ë¡ê·¸</title>
+  <title>insu's blog</title>
   <link rel="stylesheet" type="text/css" href="../css/myblog.css">
 
   <!-- Bootstrap CSS -->

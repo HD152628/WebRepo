@@ -1,15 +1,15 @@
 function hobby() {
-  location.href = "hobby.html";
+  location.href = "hobby.jsp";
 }
 
 function favorite() {
-  location.href = "favorite.html";
+  location.href = "favorite.jsp";
 }
 
 function dream() {
-  location.href = "dream.html";
+  location.href = "dream.jsp";
 }
 
 function go_register(){
-  location.href="register.html";
+  location.href="register.jsp";
 }

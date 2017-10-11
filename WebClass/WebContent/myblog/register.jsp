@@ -14,7 +14,7 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/myblog.css">
-<title>ì¸ìì ë¸ë¡ê·¸</title>
+<title>insu's blog</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -24,7 +24,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="main.html">ì¸ìì ë¸ë¡ê·¸</a>
+		<a class="navbar-brand" href="main.jsp">Main</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,11 +34,10 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a class="nav-link" onclick="hobby();">ì·¨ë¯¸<span
+				<li class="nav-item"><a class="nav-link" onclick="hobby();">hobby<span
 						class="sr-only">(current)</span></a></li>
-				<li class="nav-item"><a class="nav-link" onclick="favorite()">ì¢ìíë
-						ê²</a></li>
-				<li class="nav-item"><a class="nav-link" onclick="dream();">ê¿</a>
+				<li class="nav-item"><a class="nav-link" onclick="favorite()">favorite</a></li>
+				<li class="nav-item"><a class="nav-link" onclick="dream();">dream</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0" id="loginForm">
@@ -46,9 +45,10 @@
 					aria-label="id" id="id" required> <input
 					class="form-control mr-sm-2" type="password" placeholder="PWD"
 					aria-label="pwd" id="pwd" required>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">ë¡ê·¸ì¸</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">sign
+					in</button>
 				<button class="btn btn-outline-success my-2 my-sm-0" type="button"
-					onclick="go_register();">íìê°ì</button>
+					onclick="go_register();">sign up</button>
 			</form>
 		</div>
 	</nav>
@@ -56,13 +56,13 @@
 	<form id="registerForm">
 
 		<div class="input-group input-group-container">
-			<span class="input-group-addon">ì´ë¦</span> <input type="text"
+			<span class="input-group-addon">Name</span> <input type="text"
 				class="form-control" placeholder="Name" aria-label="Username"
 				id="name" required>
 		</div>
 
 		<div class="input-group input-group-container">
-			<span class="input-group-addon">ë²í¸</span> <input type="text"
+			<span class="input-group-addon">Number</span> <input type="text"
 				class="form-control" placeholder="Number" aria-label="Number"
 				id="number" required>
 		</div>
@@ -71,34 +71,34 @@
 		<div class="form-check form-check-inline">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio1" value="grade1" required> 1íë
+				id="inlineRadio1" value="grade1" required> 1grade
 			</label>
 		</div>
 
 		<div class="form-check form-check-inline">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio2" value="grade2" required> 2íë
+				id="inlineRadio2" value="grade2" required> 2grade
 			</label>
 		</div>
 
 		<div class="form-check form-check-inline ">
 			<label class="form-check-label"> <input
 				class="form-check-input" type="radio" name="inlineRadioOptions"
-				id="inlineRadio3" value="grade3" required> 3íë
+				id="inlineRadio3" value="grade3" required> 3grade
 			</label>
 		</div>
 
 		<select class="form-control" name="class" required>
-			<option value="">---ì í---</option>
-			<option value="class1">1ë°</option>
-			<option value="class2">2ë°</option>
-			<option value="class3">3ë°</option>
-			<option value="class4">4ë°</option>
-			<option value="class5">5ë°</option>
-			<option value="class6">6ë°</option>
+			<option value="">---Choose---</option>
+			<option value="class1">1class</option>
+			<option value="class2">2class</option>
+			<option value="class3">3class</option>
+			<option value="class4">4class</option>
+			<option value="class5">5class</option>
+			<option value="class6">6class</option>
 		</select><br>
-		<button type="submit" class="btn btn-primary btn-lg">íìê°ì</button>
+		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
 	</form>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -118,7 +118,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">ë¡ê·¸ì¸ ì±ê³µ</h5>
+					<h5 class="modal-title">Log in Success</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -129,7 +129,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">ë«ê¸°</button>
+						data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -139,7 +139,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">íìê°ì ì±ê³µ</h5>
+					<h5 class="modal-title">Sign up Success</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -150,7 +150,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal" onclick="location.href='main.html'">ë«ê¸°</button>
+						data-dismiss="modal" onclick="location.href='main.jsp'">close</button>
 				</div>
 			</div>
 		</div>
